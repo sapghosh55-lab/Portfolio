@@ -1,310 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saptarshi Ghosh</title>
-<link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saptarshi Ghosh — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Google Analytics -->
-    <script async
-      src="https://www.googletagmanager.com/gtag/js?id=G-98OLQV9E3Q"></script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  gtag('config', 'G-98OLQV9E3Q');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-98OLQV9E3Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-98OLQV9E3Q');
+  </script>
+</head>
 
-  </head>
+<body>
 
-  <body>
-<div id="particles-js"></div>
-    <header>
-      <nav>
-        <div>Saptarshi's Portfolio</div>
+  <div class="main-container">
 
-        <ul>
-          <li><a href="#home"><i class="fas fa-home"></i>
-              Home</a></li>
-          <li><a href="#about"><i class="fas fa-user"></i>
-              About</a></li>
-          <li><a href="#skills"><i class="fas fa-code"></i>
-              Skills</a></li>
-          <li><a href="#contact"><i class="fas fa-envelope"></i>
-              Contact</a></li>
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <div class="avatar-box">
+          <img src="photo.jpeg" alt="Saptarshi Ghosh">
+        </div>
+
+        <h1 class="name">Saptarshi Ghosh</h1>
+        <p class="title">Tech Innovator & Developer</p>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="contacts-list">
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">EMAIL</p>
+            <a href="mailto:sapghosh55@gmail.com" class="contact-link">sapghosh55@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">PHONE</p>
+            <a href="tel:+918240084299" class="contact-link">+91 82400 84299</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">BIRTHDAY</p>
+            <time datetime="2006-09-11">September 11, 2006</time>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon-box">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">LOCATION</p>
+            <address>Kolkata, West Bengal, India</address>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="sidebar-socials">
+        <a href="https://github.com/sapghosh55-lab" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/918240084299" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://instagram.com/rogersrift" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="#about" class="navbar-link active">About</a></li>
+          <li class="navbar-item"><a href="#resume" class="navbar-link">Resume</a></li>
+          <li class="navbar-item"><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+          <li class="navbar-item"><a href="#blog" class="navbar-link">Blog</a></li>
+          <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
         </ul>
       </nav>
-    </header>
 
-    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about" class="tab-content active">
+        <header>
+          <h2 class="article-title">About Me</h2>
+        </header>
 
-      <!-- HERO -->
-      <section id="home" class="firstSection">
+        <section class="about-text">
+          <p>
+            I'm a Second-year Computer Science and Engineering student passionate about full-stack web development,
+            open-source software, and AI applications. Currently building projects with JavaScript, React, Next.js, and
+            C, with a strong focus on clean architecture and performance.
+          </p>
+          <p>
+            Let's connect and turn creative ideas into real-world applications that create an impact!
+          </p>
+        </section>
 
-        <div class="leftSection">
-          Hi, My name is <span class="purple">Saptarshi Ghosh</span>
-          <div>And I am a passionate</div>
-          <div>web developer</div>
-          <span id="element"></span>
+        <!-- WHAT I'M DOING -->
+        <section class="service">
+          <h3 class="service-title">What I'm Doing</h3>
 
-          <div class="buttons">
-            <a href="resume.pdf"
-              download="Saptarshi_Ghosh_Resume.pdf" class="btn">
-              Download Resume
-            </a>
-            <a href="projects.html" class="btn secondary">
-    View Projects
-</a>
+          <div class="service-grid">
+
+            <div class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Web Development</h4>
+                <p class="service-item-text">
+                  Crafting modern, responsive web applications using HTML, CSS, JavaScript, and framework ecosystems.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Open Source Contribution</h4>
+                <p class="service-item-text">
+                  Actively participating in open-source projects, fixing issues, and collaborating across software
+                  communities.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">AI & Machine Learning</h4>
+                <p class="service-item-text">
+                  Exploring foundational deep learning architectures, computer vision pipelines, and geospatial data
+                  projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-item">
+              <div class="service-icon-box">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="service-content-box">
+                <h4 class="service-item-title">Hackathon Enthusiast</h4>
+                <p class="service-item-text">
+                  Participating in hackathons and competitions.Building projects which can give real world impacts.
+                </p>
+              </div>
+            </div>
+
           </div>
+        </section>
 
-          <div class="social-links">
-            <a href="https://wa.me/918240084299" target="_blank">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-
-            <a href="https://instagram.com/rogersrift"
-              target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="rightSection">
-          <img src="undraw_web-developer_ggt0.png" alt>
-        </div>
+        <!-- SKILLS SECTION -->
+        <section class="skills">
+          <h3 class="service-title">My Skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">HTML / CSS</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C Programming</h5>
+                <data value="70">70%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
 
       </section>
-
-      <hr>
-
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="about-container">
-
-          <div class="about-text" data-aos="fade-right">
-
-            <div class="about-card">
-              <h2>About Me</h2>
-              <p>
-                I am a first-year Computer Science and Engineering student
-                passionate about web development.
-                Currently learning HTML, CSS and JavaScript while building
-                real-world projects.
-                I enjoy solving problems and continuously improving my skills.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="about-image" data-aos="fade-left">
-            <img src="photo.jpeg" alt="Saptarshi Ghosh">
-          </div>
-
-        </div>
-      </section>
-
-      <hr>
-
-      <!-- SKILLS -->
-      <section id="skills">
-        <h2 class="skills-title">My Skills</h2>
-
-        <div class="skills-wrapper">
-
-          <div class="skill">
-            <div class="skill-info">
-              <span>HTML</span>
-              <span>90%</span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" data-width="90%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <span>CSS</span>
-              <span>85%</span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" data-width="85%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <span>JavaScript</span>
-              <span>75%</span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" data-width="75%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-info">
-              <span>C</span>
-              <span>70%</span>
-            </div>
-            <div class="progress">
-              <div class="progress-bar" data-width="70%"></div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <hr>
-      <section id="blog">
-  <h2 class="section-title">My Blog</h2>
-
-  <div class="blog-container">
-
-    <div class="blog-card">
-      <h3>My First Portfolio Website</h3>
-      <p>How I built my personal portfolio using HTML, CSS and JavaScript.</p>
-      <a href="#">Read More →</a>
-    </div>
-
-    <div class="blog-card">
-      <h3>Understanding Stack (C Language)</h3>
-      <p>A beginner-friendly explanation of stack implementation in C.</p>
-      <a href="#">Read More →</a>
-    </div>
-
-    <div class="blog-card">
-      <h3>My Web Dev Journey</h3>
-      <p>What I learned in my first month of learning web development.</p>
-      <a href="#">Read More →</a>
-    </div>
-
-  </div>
-</section>
-<hr>
-      <!-- CONTACT -->
-      <section id="contact">
-  <h2 class="contact-title">Contact Me</h2>
-
-  <div class="contact-container">
-
-    <a href="https://github.com/sapghosh55-lab" target="_blank" class="contact-card">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-
-    <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" class="contact-card">
-      <i class="fab fa-linkedin"></i>
-      <span>LinkedIn</span>
-    </a>
-
-    <a href="mailto:sapghosh55@gmail.com" class="contact-card">
-      <i class="fas fa-envelope"></i>
-      <span>Email</span>
-    </a>
-
-  </div>
-</section>
-      </section>
-      <footer class="footer">
-        <p>&copy <span id="year">2026</span> Saptarshi Ghosh. All rights
-          reserved.</p>
-      </footer>
 
     </main>
 
-    <!-- Typed.js -->
-    <script
-      src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <script>
-var typed = new Typed('#element', {
-  strings: ['Web Developer','CSE Student','Tech Enthusiast','Open Source Contributor'],
-  typeSpeed:50,
-  backSpeed:30,
-  loop:true
-});
-</script>
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-AOS.init();
-</script>
-    <script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-    <script>
-const bars = document.querySelectorAll('.progress-bar');
+  </div>
 
-const showSkills = () => {
-  bars.forEach(bar => {
-    bar.style.width = bar.getAttribute('data-width');
-  });
-};
+  <script>
+    // Tab switching logic for top navigation
+    const navLinks = document.querySelectorAll('.navbar-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        navLinks.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 
-let triggered = false;
+</body>
 
-window.addEventListener('scroll', () => {
-  const section = document.querySelector('#skills');
-  const sectionTop = section.offsetTop;
-
-  if(!triggered && window.scrollY > sectionTop - 400){
-    showSkills();
-    triggered = true;
-  }
-});
-</script>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 80
-    },
-    color: {
-      value: "#8a2be2"
-    },
-    shape: {
-      type: "circle"
-    },
-    opacity: {
-      value: 0.5
-    },
-    size: {
-      value: 3
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "#00ffff",
-      opacity: 0.4,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2
-    }
-  },
-  interactivity: {
-    events: {
-      onhover: {
-        enable: true,
-        mode: "repulse"
-      }
-    }
-  }
-});
-</script>
-  </body>
 </html>
