@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saptarshi Ghosh — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Saptarshi Ghosh, Tech Innovator, Full-Stack Web Developer, and CSE Student showcasing web apps, games, skills, and certifications.">
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Fonts: Poppins -->
@@ -40,57 +41,65 @@
         <p class="title">Tech Innovator & Developer</p>
       </div>
 
-      <div class="separator"></div>
+      <!-- Mobile Toggle Button -->
+      <button class="sidebar-toggle-btn" data-sidebar-btn aria-label="Toggle contact details">
+        <span>Show Contacts</span>
+        <i class="fas fa-chevron-down"></i>
+      </button>
 
-      <div class="contacts-list">
-        <div class="contact-item">
-          <div class="icon-box">
-            <i class="fas fa-envelope"></i>
+      <div class="sidebar-more-info">
+        <div class="separator"></div>
+
+        <div class="contacts-list">
+          <div class="contact-item" data-copy="sapghosh55@gmail.com" title="Click to copy email">
+            <div class="icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">EMAIL</p>
+              <a href="mailto:sapghosh55@gmail.com" class="contact-link">sapghosh55@gmail.com</a>
+            </div>
           </div>
-          <div class="contact-info">
-            <p class="contact-title">EMAIL</p>
-            <a href="mailto:sapghosh55@gmail.com" class="contact-link">sapghosh55@gmail.com</a>
+
+          <div class="contact-item" data-copy="+918240084299" title="Click to copy phone number">
+            <div class="icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">PHONE</p>
+              <a href="tel:+918240084299" class="contact-link">+91 82400 84299</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">BIRTHDAY</p>
+              <time datetime="2006-09-11">September 11, 2006</time>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">LOCATION</p>
+              <address>Kolkata, West Bengal, India</address>
+            </div>
           </div>
         </div>
 
-        <div class="contact-item">
-          <div class="icon-box">
-            <i class="fas fa-phone-alt"></i>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">PHONE</p>
-            <a href="tel:+918240084299" class="contact-link">+91 82400 84299</a>
-          </div>
+        <div class="separator"></div>
+
+        <div class="sidebar-socials">
+          <a href="https://github.com/sapghosh55-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/918240084299" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/rogersrift" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-
-        <div class="contact-item">
-          <div class="icon-box">
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">BIRTHDAY</p>
-            <time datetime="2006-09-11">September 11, 2006</time>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="icon-box">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="contact-info">
-            <p class="contact-title">LOCATION</p>
-            <address>Kolkata, West Bengal, India</address>
-          </div>
-        </div>
-      </div>
-
-      <div class="separator"></div>
-
-      <div class="sidebar-socials">
-        <a href="https://github.com/sapghosh55-lab" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/918240084299" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://instagram.com/rogersrift" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </aside>
 
@@ -109,7 +118,7 @@
         </ul>
       </nav>
 
-      <!-- ABOUT SECTION -->
+      <!-- ================= 1. ABOUT SECTION ================= -->
       <section id="about" class="tab-content active">
         <header>
           <h2 class="article-title">About Me</h2>
@@ -119,7 +128,7 @@
           <p>
             I'm a Second-year Computer Science and Engineering student passionate about full-stack web development,
             open-source software, and AI applications. Currently building projects with JavaScript, React, Next.js, and
-            C, with a strong focus on clean architecture and performance.
+            C, with a strong focus on clean architecture, performance, and responsive user experiences.
           </p>
           <p>
             Let's connect and turn creative ideas into real-world applications that create an impact!
@@ -139,7 +148,7 @@
               <div class="service-content-box">
                 <h4 class="service-item-title">Web Development</h4>
                 <p class="service-item-text">
-                  Crafting modern, responsive web applications using HTML, CSS, JavaScript, and framework ecosystems.
+                  Crafting modern, responsive web applications using HTML5, CSS3, JavaScript, React, and modular ecosystems.
                 </p>
               </div>
             </div>
@@ -151,8 +160,7 @@
               <div class="service-content-box">
                 <h4 class="service-item-title">Open Source Contribution</h4>
                 <p class="service-item-text">
-                  Actively participating in open-source projects, fixing issues, and collaborating across software
-                  communities.
+                  Actively participating in open-source repositories, fixing issues, and collaborating across software communities.
                 </p>
               </div>
             </div>
@@ -164,8 +172,7 @@
               <div class="service-content-box">
                 <h4 class="service-item-title">AI & Machine Learning</h4>
                 <p class="service-item-text">
-                  Exploring foundational deep learning architectures, computer vision pipelines, and geospatial data
-                  projects.
+                  Exploring foundational deep learning architectures, computer vision pipelines, and intelligent automation systems.
                 </p>
               </div>
             </div>
@@ -177,7 +184,7 @@
               <div class="service-content-box">
                 <h4 class="service-item-title">Hackathon Enthusiast</h4>
                 <p class="service-item-text">
-                  Participating in hackathons and competitions.Building projects which can give real world impacts.
+                  Participating in hackathons and competitions, building impactful software solutions under rapid turnaround times.
                 </p>
               </div>
             </div>
@@ -187,63 +194,613 @@
 
         <!-- SKILLS SECTION -->
         <section class="skills">
-          <h3 class="service-title">My Skills</h3>
+          <h3 class="service-title">Technical Proficiency</h3>
           <ul class="skills-list content-card">
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">HTML / CSS</h5>
+                <h5 class="h5">HTML5 / CSS3 / Modern Layouts</h5>
                 <data value="90">90%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" data-width="90%" style="width: 90%;"></div>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">JavaScript</h5>
+                <h5 class="h5">JavaScript (ES6+) & DOM APIs</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="80%" style="width: 80%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">C Programming & Data Structures</h5>
                 <data value="75">75%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" data-width="75%" style="width: 75%;"></div>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">React Programming</h5>
-                <data value="15">15%</data>
+                <h5 class="h5">React.js & Frontend Architecture</h5>
+                <data value="65">65%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 15%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">C Programming</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" data-width="65%" style="width: 65%;"></div>
               </div>
             </li>
           </ul>
         </section>
 
+        <!-- QUICK CTA BANNER -->
+        <div class="about-cta-banner">
+          <div class="cta-text">
+            <h4>Interested in working together or checking out my projects?</h4>
+            <p>Explore my featured projects or get in touch directly.</p>
+          </div>
+          <div class="cta-buttons">
+            <button class="btn btn-primary" onclick="navigateToTab('portfolio')">
+              <i class="fas fa-briefcase"></i> View Portfolio
+            </button>
+            <button class="btn btn-secondary" onclick="navigateToTab('contact')">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= 2. RESUME SECTION ================= -->
+      <section id="resume" class="tab-content">
+        <header class="section-header-flex">
+          <h2 class="article-title">Resume</h2>
+          <div class="resume-actions">
+            <a href="resume.pdf" download="Saptarshi_Ghosh_Resume.pdf" class="btn btn-primary btn-sm">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="resume.pdf" target="_blank" class="btn btn-secondary btn-sm">
+              <i class="fas fa-external-link-alt"></i> Preview CV
+            </a>
+          </div>
+        </header>
+
+        <!-- EDUCATION TIMELINE -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science and Engineering</h4>
+              <span class="timeline-badge">2024 — Present</span>
+              <p class="timeline-text">
+                Studying core computer science curriculum, data structures & algorithms, computer architecture, object-oriented programming, and operating systems.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Higher Secondary Education (Class XII - Science)</h4>
+              <span class="timeline-badge">2022 — 2024</span>
+              <p class="timeline-text">
+                Completed higher secondary education majoring in Physics, Chemistry, and Mathematics with a strong analytical foundation.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- EXPERIENCE / LEADERSHIP TIMELINE -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="h3">Experience & Activities</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Open Source Developer & Contributor</h4>
+              <span class="timeline-badge">2025 — Present</span>
+              <p class="timeline-text">
+                Contributing to open-source developer tooling, documentation, and frontend bug fixes on GitHub. Building reusable web widgets and algorithms.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Hackathon Participant & Project Lead</h4>
+              <span class="timeline-badge">2025 — Present</span>
+              <p class="timeline-text">
+                Collaborating with multidisciplinary teams to architect, design, and deploy full-stack prototypes and interactive web solutions within 24-48 hour hackathons.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- SKILLS CATEGORIES PILLS -->
+        <section class="skill-categories">
+          <h3 class="service-title">Technical Expertise</h3>
+          <div class="skills-pill-grid">
+            <div class="skill-category-card">
+              <div class="category-header">
+                <i class="fas fa-code"></i>
+                <h4>Languages</h4>
+              </div>
+              <div class="pills-wrapper">
+                <span class="skill-pill">C</span>
+                <span class="skill-pill">JavaScript (ES6+)</span>
+                <span class="skill-pill">HTML5</span>
+                <span class="skill-pill">CSS3</span>
+                <span class="skill-pill">Python (Basics)</span>
+              </div>
+            </div>
+
+            <div class="skill-category-card">
+              <div class="category-header">
+                <i class="fas fa-layer-group"></i>
+                <h4>Frameworks & Tools</h4>
+              </div>
+              <div class="pills-wrapper">
+                <span class="skill-pill">React.js</span>
+                <span class="skill-pill">Git & GitHub</span>
+                <span class="skill-pill">VS Code</span>
+                <span class="skill-pill">Vercel</span>
+                <span class="skill-pill">REST APIs</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- ================= 3. PORTFOLIO SECTION ================= -->
+      <section id="portfolio" class="tab-content">
+        <header>
+          <h2 class="article-title">Portfolio</h2>
+        </header>
+
+        <!-- FILTER BUTTONS -->
+        <ul class="filter-list">
+          <li class="filter-item">
+            <button class="filter-btn active" data-filter="all">All</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn" data-filter="web-development">Web Development</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn" data-filter="games">Interactive Games</button>
+          </li>
+          <li class="filter-item">
+            <button class="filter-btn" data-filter="api-apps">APIs & Utilities</button>
+          </li>
+        </ul>
+
+        <!-- PROJECTS GRID -->
+        <div class="project-grid">
+
+          <!-- Tic Tac Toe Card -->
+          <div class="project-item" data-category="games">
+            <div class="project-card">
+              <figure class="project-img">
+                <img src="tic-tac-toe.png" alt="Tic Tac Toe Game">
+                <div class="project-item-icon-box">
+                  <button class="project-quick-view-btn" data-project-details="tic-tac-toe" title="Quick View">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </figure>
+              <div class="project-content">
+                <span class="project-category">Interactive Game</span>
+                <h3 class="project-title">Tic Tac Toe Game</h3>
+                <p class="project-desc">
+                  A modern, responsive Tic-Tac-Toe web game with dynamic win detection, turn indicators, and scorekeeping.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://tic-tac-toe-fawn-xi-15.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="fas fa-play"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/sapghosh55-lab/tic-tac-toe" target="_blank" class="btn btn-sm btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-outline" data-project-details="tic-tac-toe">
+                    <i class="fas fa-info-circle"></i> Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rock Paper Scissor Card -->
+          <div class="project-item" data-category="games">
+            <div class="project-card">
+              <figure class="project-img">
+                <img src="rock-paper-scissor.png" alt="Rock Paper Scissor Game">
+                <div class="project-item-icon-box">
+                  <button class="project-quick-view-btn" data-project-details="rock-paper-scissor" title="Quick View">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </figure>
+              <div class="project-content">
+                <span class="project-category">Interactive Game</span>
+                <h3 class="project-title">Rock Paper Scissor Game</h3>
+                <p class="project-desc">
+                  A fun, animated game featuring smart AI randomized moves, live score tracking, and smooth animations.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://rock-paper-scissor-drab-nine.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="fas fa-play"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/sapghosh55-lab/rock-paper-scissor" target="_blank" class="btn btn-sm btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-outline" data-project-details="rock-paper-scissor">
+                    <i class="fas fa-info-circle"></i> Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Currency Exchanger Card -->
+          <div class="project-item" data-category="api-apps">
+            <div class="project-card">
+              <figure class="project-img">
+                <img src="currency-exchanger.png" alt="Currency Exchanger">
+                <div class="project-item-icon-box">
+                  <button class="project-quick-view-btn" data-project-details="currency-exchanger" title="Quick View">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </figure>
+              <div class="project-content">
+                <span class="project-category">Web Application & API</span>
+                <h3 class="project-title">Currency Exchanger</h3>
+                <p class="project-desc">
+                  A real-time foreign currency exchange converter fetching live rates with country flags and instant calculations.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://currency-exchanger-six-psi.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="fas fa-play"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/sapghosh55-lab/Currency-exchanger.git" target="_blank" class="btn btn-sm btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-outline" data-project-details="currency-exchanger">
+                    <i class="fas fa-info-circle"></i> Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather App Card -->
+          <div class="project-item" data-category="api-apps">
+            <div class="project-card">
+              <figure class="project-img">
+                <img src="weather-app.png" alt="Weather App">
+                <div class="project-item-icon-box">
+                  <button class="project-quick-view-btn" data-project-details="weather-app" title="Quick View">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </figure>
+              <div class="project-content">
+                <span class="project-category">Web Application & API</span>
+                <h3 class="project-title">Live Weather App</h3>
+                <p class="project-desc">
+                  Real-time weather forecast application with global city search, humidity metrics, and atmospheric visual effects.
+                </p>
+                <div class="project-buttons">
+                  <a href="https://weather-app-pearl-rho-86.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="fas fa-play"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/sapghosh55-lab/Weather-app" target="_blank" class="btn btn-sm btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                  <button class="btn btn-sm btn-outline" data-project-details="weather-app">
+                    <i class="fas fa-info-circle"></i> Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 4. CERTIFICATIONS SECTION ================= -->
+      <section id="certifications" class="tab-content">
+        <header>
+          <h2 class="article-title">Certifications & Achievements</h2>
+        </header>
+
+        <div class="certifications-grid">
+
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-badge">Verified</span>
+              <h3 class="cert-title">Web Development Fundamentals</h3>
+              <p class="cert-issuer"><i class="fas fa-building"></i> Online Developer Program</p>
+              <p class="cert-desc">Covered semantic HTML5, modern CSS3 styling, responsive grid layouts, and JavaScript DOM manipulation.</p>
+              <div class="cert-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-badge">Achievement</span>
+              <h3 class="cert-title">Data Structures & Algorithms in C</h3>
+              <p class="cert-issuer"><i class="fas fa-university"></i> Computer Science Core</p>
+              <p class="cert-desc">Mastered linear and non-linear data structures including Linked Lists, Stacks, Queues, Trees, and Sorting algorithms in C.</p>
+              <div class="cert-tags">
+                <span>C Language</span>
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="cert-content">
+              <span class="cert-badge">Competition</span>
+              <h3 class="cert-title">Hackathon Finalist & Innovation Award</h3>
+              <p class="cert-issuer"><i class="fas fa-code-branch"></i> Tech Community</p>
+              <p class="cert-desc">Architected and pitched a rapid prototype addressing real-world problem sets with responsive web interfaces.</p>
+              <div class="cert-tags">
+                <span>Hackathon</span>
+                <span>Rapid Prototyping</span>
+                <span>Team Lead</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 5. BLOG SECTION ================= -->
+      <section id="blog" class="tab-content">
+        <header>
+          <h2 class="article-title">Articles & Blog</h2>
+        </header>
+
+        <div class="blog-grid">
+
+          <article class="blog-card">
+            <div class="blog-banner-box">
+              <div class="blog-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Web Dev</span>
+                <span class="dot"></span>
+                <time datetime="2026-02">Feb 2026</time>
+              </div>
+              <h3 class="blog-title">Building My Neon Cyber Portfolio Website</h3>
+              <p class="blog-text">
+                How I designed and engineered an eye-catching, glassmorphic neon portfolio with vanilla JavaScript, CSS custom properties, and SPA routing.
+              </p>
+              <button class="btn btn-sm btn-link" data-blog-id="portfolio-site">
+                Read Article <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-banner-box">
+              <div class="blog-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">C Language</span>
+                <span class="dot"></span>
+                <time datetime="2026-01">Jan 2026</time>
+              </div>
+              <h3 class="blog-title">Understanding Stack Data Structures in C</h3>
+              <p class="blog-text">
+                A deep dive into LIFO data structures, stack memory management, dynamic pointers, push/pop operations, and real-world compiler applications.
+              </p>
+              <button class="btn btn-sm btn-link" data-blog-id="stack-c-language">
+                Read Article <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-banner-box">
+              <div class="blog-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Career</span>
+                <span class="dot"></span>
+                <time datetime="2025-12">Dec 2025</time>
+              </div>
+              <h3 class="blog-title">My Journey into Full-Stack Web Development</h3>
+              <p class="blog-text">
+                From basic C code to building interactive web apps, API consumption, open-source collaboration, and participating in hackathons.
+              </p>
+              <button class="btn btn-sm btn-link" data-blog-id="web-dev-journey">
+                Read Article <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ================= 6. CONTACT SECTION ================= -->
+      <section id="contact" class="tab-content">
+        <header>
+          <h2 class="article-title">Contact</h2>
+        </header>
+
+        <!-- DIRECT CONNECT CARDS -->
+        <div class="contact-cards-grid">
+          <a href="mailto:sapghosh55@gmail.com" class="contact-quick-card">
+            <div class="quick-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="quick-info">
+              <h4>Email Me</h4>
+              <p>sapghosh55@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" class="contact-quick-card">
+            <div class="quick-icon-box">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="quick-info">
+              <h4>LinkedIn</h4>
+              <p>Connect professionally</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/918240084299" target="_blank" class="contact-quick-card">
+            <div class="quick-icon-box">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="quick-info">
+              <h4>WhatsApp</h4>
+              <p>Instant chat</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section">
+          <h3 class="service-title">Send Me a Message</h3>
+
+          <form class="contact-form">
+            <div class="input-wrapper">
+              <div class="form-group">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project collaboration / Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Hi Saptarshi, I'd like to discuss a project..." required></textarea>
+            </div>
+
+            <button class="btn btn-primary form-btn" type="submit">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
       </section>
 
     </main>
 
   </div>
 
-  <script>
-    // Tab switching logic for top navigation
-    const navLinks = document.querySelectorAll('.navbar-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', function (e) {
-        navLinks.forEach(item => item.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  </script>
+  <!-- ================= PROJECT DETAILS MODAL ================= -->
+  <div id="project-modal" class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-media-box">
+          <img id="modal-project-img" src="tic-tac-toe.png" alt="Project preview">
+        </div>
+
+        <div class="modal-details">
+          <span id="modal-project-category" class="project-category">Category</span>
+          <h3 id="modal-project-title" class="modal-title">Project Title</h3>
+          
+          <p id="modal-project-desc" class="modal-desc">Project description goes here.</p>
+
+          <div class="modal-section">
+            <h4>Technologies Used</h4>
+            <div id="modal-project-tags" class="tags-flex"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4>Key Highlights</h4>
+            <ul id="modal-project-features" class="modal-features-list"></ul>
+          </div>
+
+          <div class="modal-action-buttons">
+            <a id="modal-live-link" href="#" target="_blank" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> View Live Demo
+            </a>
+            <a id="modal-github-link" href="#" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-github"></i> View GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= BLOG READER MODAL ================= -->
+  <div id="blog-modal" class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-blog-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card modal-card-article">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="modal-article-header">
+        <div class="modal-article-meta">
+          <span id="modal-blog-category" class="blog-category">Category</span>
+          <span class="dot"></span>
+          <span id="modal-blog-date">Date</span>
+          <span class="dot"></span>
+          <span id="modal-blog-readtime">Read Time</span>
+        </div>
+        <h2 id="modal-blog-title" class="modal-title">Blog Title</h2>
+      </div>
+
+      <div id="modal-blog-body" class="modal-article-body"></div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="toast-notification" class="toast-notification"></div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 
 </body>
 
