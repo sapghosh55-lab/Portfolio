@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saptarshi Ghosh — Portfolio</title>
-  <meta name="description" content="Personal portfolio of Saptarshi Ghosh, Tech Innovator, Full-Stack Web Developer, and CSE Student showcasing web apps, games, skills, and certifications.">
+  <title>Saptarshi Ghosh | Friendly Neighborhood Developer — Spider-Man Portfolio</title>
+  <meta name="description"
+    content="Personal Spider-Man themed portfolio of Saptarshi Ghosh, Full-Stack Web Developer, CSE Student, and Tech Innovator showcasing web apps, games, skills, and certifications.">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts: Poppins -->
+  <!-- Google Fonts: Outfit, Bangers, Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,22 +31,37 @@
 
 <body>
 
+  <!-- SPIDER-WEB MESH & SPIDEY SENSE FX -->
+  <div class="spidey-bg-web"></div>
+  <div id="spidey-sense-wave" class="spidey-sense-wave"></div>
+
   <div class="main-container">
 
-    <!-- LEFT SIDEBAR -->
+    <!-- LEFT SIDEBAR - SPIDEY SUIT & PROFILE HUB -->
     <aside class="sidebar">
+      <i class="fas fa-spider sidebar-web-corner"></i>
+
       <div class="sidebar-info">
-        <div class="avatar-box">
+        <div class="avatar-box" id="spidey-avatar" title="Click to trigger Spidey-Sense!">
           <img src="photo.jpeg" alt="Saptarshi Ghosh">
+          <div class="avatar-spider-badge">
+            <i class="fas fa-spider"></i>
+          </div>
         </div>
 
         <h1 class="name">Saptarshi Ghosh</h1>
-        <p class="title">Tech Innovator & Developer</p>
+        <div class="title-badge">
+          <i class="fas fa-mask"></i> Tech Innovator & Web Slinger
+        </div>
+
+        <div class="spidey-status-chip" id="spidey-sense-btn" title="Trigger Spidey-Sense!">
+          <i class="fas fa-bolt"></i> <span>Spidey-Sense: Ready</span>
+        </div>
       </div>
 
       <!-- Mobile Toggle Button -->
       <button class="sidebar-toggle-btn" data-sidebar-btn aria-label="Toggle contact details">
-        <span>Show Contacts</span>
+        <span>Show Spider Signals</span>
         <i class="fas fa-chevron-down"></i>
       </button>
 
@@ -56,7 +74,7 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div class="contact-info">
-              <p class="contact-title">EMAIL</p>
+              <p class="contact-title">SPIDEY EMAIL</p>
               <a href="mailto:sapghosh55@gmail.com" class="contact-link">sapghosh55@gmail.com</a>
             </div>
           </div>
@@ -66,7 +84,7 @@
               <i class="fas fa-phone-alt"></i>
             </div>
             <div class="contact-info">
-              <p class="contact-title">PHONE</p>
+              <p class="contact-title">DIRECT LINE</p>
               <a href="tel:+918240084299" class="contact-link">+91 82400 84299</a>
             </div>
           </div>
@@ -86,7 +104,7 @@
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div class="contact-info">
-              <p class="contact-title">LOCATION</p>
+              <p class="contact-title">BASE HQ</p>
               <address>Kolkata, West Bengal, India</address>
             </div>
           </div>
@@ -95,34 +113,53 @@
         <div class="separator"></div>
 
         <div class="sidebar-socials">
-          <a href="https://github.com/sapghosh55-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://wa.me/918240084299" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://instagram.com/rogersrift" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/sapghosh55-lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+            title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/918240084299" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+            title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com/rogersrift" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+            title="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </aside>
 
-    <!-- MAIN CONTENT AREA -->
+    <!-- MAIN CONTENT AREA - SPIDEY HIGH-TECH HUD -->
     <main class="main-content">
 
       <!-- NAVBAR -->
       <nav class="navbar">
         <ul class="navbar-list">
-          <li class="navbar-item"><a href="#about" class="navbar-link active">About</a></li>
-          <li class="navbar-item"><a href="#resume" class="navbar-link">Resume</a></li>
-          <li class="navbar-item"><a href="#portfolio" class="navbar-link">Portfolio</a></li>
-          <li class="navbar-item"><a href="#certifications" class="navbar-link">Certifications</a></li>
-          <li class="navbar-item"><a href="#blog" class="navbar-link">Blog</a></li>
-          <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+          <li class="navbar-item"><a href="#about" class="navbar-link active"><i class="fas fa-spider"></i> About</a>
+          </li>
+          <li class="navbar-item"><a href="#resume" class="navbar-link"><i class="fas fa-file-code"></i> Resume</a></li>
+          <li class="navbar-item"><a href="#portfolio" class="navbar-link"><i class="fas fa-layer-group"></i>
+              Portfolio</a></li>
+          <li class="navbar-item"><a href="#certifications" class="navbar-link"><i class="fas fa-shield-alt"></i>
+              Badges</a></li>
+          <li class="navbar-item"><a href="#blog" class="navbar-link"><i class="fas fa-newspaper"></i> Daily Bugle</a>
+          </li>
+          <li class="navbar-item"><a href="#contact" class="navbar-link"><i class="fas fa-paper-plane"></i> Signal</a>
+          </li>
         </ul>
       </nav>
 
       <!-- ================= 1. ABOUT SECTION ================= -->
       <section id="about" class="tab-content active">
         <header>
-          <h2 class="article-title">About Me</h2>
+          <h2 class="article-title"><i class="fas fa-spider spidey-title-icon"></i> About Me</h2>
         </header>
+
+        <!-- SPIDEY MOTTO BANNER -->
+        <div class="about-hero-box">
+          <i class="fas fa-quote-left about-hero-icon"></i>
+          <div>
+            <div class="about-hero-motto">"With Great Code Comes Great Responsibility."</div>
+            <div class="about-hero-sub">Crafting high-performance web applications, scalable architectures, and
+              interactive digital experiences.</div>
+          </div>
+        </div>
 
         <section class="about-text">
           <p>
@@ -131,13 +168,15 @@
             C, with a strong focus on clean architecture, performance, and responsive user experiences.
           </p>
           <p>
-            Let's connect and turn creative ideas into real-world applications that create an impact!
+            Much like swinging through the skyline, solving intricate algorithmic puzzles and engineering immersive
+            digital interfaces requires precision, agility, and a strong sense of purpose. Let's connect and turn
+            creative ideas into real-world applications that make an impact!
           </p>
         </section>
 
         <!-- WHAT I'M DOING -->
         <section class="service">
-          <h3 class="service-title">What I'm Doing</h3>
+          <h3 class="service-title"><i class="fas fa-crosshairs"></i> Web Slinging Capabilities</h3>
 
           <div class="service-grid">
 
@@ -146,9 +185,10 @@
                 <i class="fas fa-code"></i>
               </div>
               <div class="service-content-box">
-                <h4 class="service-item-title">Web Development</h4>
+                <h4 class="service-item-title">Full-Stack Web Slinging</h4>
                 <p class="service-item-text">
-                  Crafting modern, responsive web applications using HTML5, CSS3, JavaScript, React, and modular ecosystems.
+                  Crafting modern, responsive web applications using HTML5, CSS3, JavaScript, React, and modular
+                  ecosystems.
                 </p>
               </div>
             </div>
@@ -158,9 +198,10 @@
                 <i class="fas fa-laptop-code"></i>
               </div>
               <div class="service-content-box">
-                <h4 class="service-item-title">Open Source Contribution</h4>
+                <h4 class="service-item-title">Open Source Heroics</h4>
                 <p class="service-item-text">
-                  Actively participating in open-source repositories, fixing issues, and collaborating across software communities.
+                  Actively participating in open-source repositories, fixing issues, and collaborating across software
+                  communities worldwide.
                 </p>
               </div>
             </div>
@@ -170,9 +211,10 @@
                 <i class="fas fa-brain"></i>
               </div>
               <div class="service-content-box">
-                <h4 class="service-item-title">AI & Machine Learning</h4>
+                <h4 class="service-item-title">AI & Neural Networks</h4>
                 <p class="service-item-text">
-                  Exploring foundational deep learning architectures, computer vision pipelines, and intelligent automation systems.
+                  Exploring foundational deep learning architectures, computer vision pipelines, and intelligent
+                  automation systems.
                 </p>
               </div>
             </div>
@@ -182,9 +224,10 @@
                 <i class="fas fa-gamepad"></i>
               </div>
               <div class="service-content-box">
-                <h4 class="service-item-title">Hackathon Enthusiast</h4>
+                <h4 class="service-item-title">Hackathon Crusades</h4>
                 <p class="service-item-text">
-                  Participating in hackathons and competitions, building impactful software solutions under rapid turnaround times.
+                  Participating in hackathons and competitions, building impactful software solutions under rapid
+                  turnaround times.
                 </p>
               </div>
             </div>
@@ -194,42 +237,42 @@
 
         <!-- SKILLS SECTION -->
         <section class="skills">
-          <h3 class="service-title">Technical Proficiency</h3>
+          <h3 class="service-title"><i class="fas fa-tachometer-alt"></i> Web Shooter Fluid & Powers</h3>
           <ul class="skills-list content-card">
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">HTML5 / CSS3 / Modern Layouts</h5>
+                <h5><i class="fas fa-code"></i> HTML5 / Modern CSS3 / Web Layouts</h5>
                 <data value="90">90%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" data-width="90%" style="width: 90%;"></div>
+                <div class="skill-progress-fill" data-width="90%"></div>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">JavaScript (ES6+) & DOM APIs</h5>
+                <h5><i class="fab fa-js-square"></i> JavaScript (ES6+) & DOM APIs</h5>
                 <data value="80">80%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" data-width="80%" style="width: 80%;"></div>
+                <div class="skill-progress-fill" data-width="80%"></div>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">C Programming & Data Structures</h5>
+                <h5><i class="fas fa-terminal"></i> C Programming & Data Structures</h5>
                 <data value="75">75%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" data-width="75%" style="width: 75%;"></div>
+                <div class="skill-progress-fill" data-width="75%"></div>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">React.js & Frontend Architecture</h5>
+                <h5><i class="fab fa-react"></i> React.js & Frontend Architecture</h5>
                 <data value="65">65%</data>
               </div>
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" data-width="65%" style="width: 65%;"></div>
+                <div class="skill-progress-fill" data-width="65%"></div>
               </div>
             </li>
           </ul>
@@ -238,15 +281,15 @@
         <!-- QUICK CTA BANNER -->
         <div class="about-cta-banner">
           <div class="cta-text">
-            <h4>Interested in working together or checking out my projects?</h4>
-            <p>Explore my featured projects or get in touch directly.</p>
+            <h4>Ready to team up or explore the project multiverse?</h4>
+            <p>Check out my latest web prototypes or send a direct signal.</p>
           </div>
           <div class="cta-buttons">
             <button class="btn btn-primary" onclick="navigateToTab('portfolio')">
               <i class="fas fa-briefcase"></i> View Portfolio
             </button>
             <button class="btn btn-secondary" onclick="navigateToTab('contact')">
-              <i class="fas fa-paper-plane"></i> Contact Me
+              <i class="fas fa-paper-plane"></i> Send Signal
             </button>
           </div>
         </div>
@@ -256,12 +299,12 @@
       <!-- ================= 2. RESUME SECTION ================= -->
       <section id="resume" class="tab-content">
         <header class="section-header-flex">
-          <h2 class="article-title">Resume</h2>
+          <h2 class="article-title"><i class="fas fa-file-alt spidey-title-icon"></i> Resume & Timeline</h2>
           <div class="resume-actions">
             <a href="resume.pdf" download="Saptarshi_Ghosh_Resume.pdf" class="btn btn-primary btn-sm">
               <i class="fas fa-download"></i> Download CV
             </a>
-            <a href="resume.pdf" target="_blank" class="btn btn-secondary btn-sm">
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
               <i class="fas fa-external-link-alt"></i> Preview CV
             </a>
           </div>
@@ -273,23 +316,25 @@
             <div class="icon-box">
               <i class="fas fa-graduation-cap"></i>
             </div>
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Academy & Education</h3>
           </div>
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bachelor of Technology in Computer Science and Engineering</h4>
-              <span class="timeline-badge">2024 — Present</span>
+              <h4 class="timeline-item-title">Bachelor of Technology in Computer Science and Engineering</h4>
+              <span class="timeline-badge">2025 — Present</span>
               <p class="timeline-text">
-                Studying core computer science curriculum, data structures & algorithms, computer architecture, object-oriented programming, and operating systems.
+                Studying core computer science curriculum, data structures & algorithms, computer architecture,
+                object-oriented programming, and operating systems.
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Higher Secondary Education (Class XII - Science)</h4>
-              <span class="timeline-badge">2022 — 2024</span>
+              <h4 class="timeline-item-title">Higher Secondary Education (Class XII - Science)</h4>
+              <span class="timeline-badge">2023 — 2025</span>
               <p class="timeline-text">
-                Completed higher secondary education majoring in Physics, Chemistry, and Mathematics with a strong analytical foundation.
+                Completed higher secondary education majoring in Physics, Chemistry, and Mathematics with a strong
+                analytical foundation.
               </p>
             </li>
           </ol>
@@ -301,23 +346,25 @@
             <div class="icon-box">
               <i class="fas fa-briefcase"></i>
             </div>
-            <h3 class="h3">Experience & Activities</h3>
+            <h3 class="h3">Missions & Experience</h3>
           </div>
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Open Source Developer & Contributor</h4>
-              <span class="timeline-badge">2025 — Present</span>
+              <h4 class="timeline-item-title">Open Source Developer & Contributor</h4>
+              <span class="timeline-badge">2026 — Present</span>
               <p class="timeline-text">
-                Contributing to open-source developer tooling, documentation, and frontend bug fixes on GitHub. Building reusable web widgets and algorithms.
+                Contributing to open-source developer tooling, documentation, and frontend bug fixes on GitHub. Building
+                reusable web widgets and algorithms.
               </p>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Hackathon Participant & Project Lead</h4>
-              <span class="timeline-badge">2025 — Present</span>
+              <h4 class="timeline-item-title">Hackathon Project Lead & Competitor</h4>
+              <span class="timeline-badge">2026 — Present</span>
               <p class="timeline-text">
-                Collaborating with multidisciplinary teams to architect, design, and deploy full-stack prototypes and interactive web solutions within 24-48 hour hackathons.
+                Collaborating with multidisciplinary teams to architect, design, and deploy full-stack prototypes and
+                interactive web solutions within 24-48 hour hackathons.
               </p>
             </li>
           </ol>
@@ -325,12 +372,12 @@
 
         <!-- SKILLS CATEGORIES PILLS -->
         <section class="skill-categories">
-          <h3 class="service-title">Technical Expertise</h3>
+          <h3 class="service-title"><i class="fas fa-tools"></i> Spidey Arsenal & Tools</h3>
           <div class="skills-pill-grid">
             <div class="skill-category-card">
               <div class="category-header">
                 <i class="fas fa-code"></i>
-                <h4>Languages</h4>
+                <h4>Core Languages</h4>
               </div>
               <div class="pills-wrapper">
                 <span class="skill-pill">C</span>
@@ -344,7 +391,7 @@
             <div class="skill-category-card">
               <div class="category-header">
                 <i class="fas fa-layer-group"></i>
-                <h4>Frameworks & Tools</h4>
+                <h4>Frameworks & Gear</h4>
               </div>
               <div class="pills-wrapper">
                 <span class="skill-pill">React.js</span>
@@ -361,13 +408,13 @@
       <!-- ================= 3. PORTFOLIO SECTION ================= -->
       <section id="portfolio" class="tab-content">
         <header>
-          <h2 class="article-title">Portfolio</h2>
+          <h2 class="article-title"><i class="fas fa-th-large spidey-title-icon"></i> Web Portfolio</h2>
         </header>
 
         <!-- FILTER BUTTONS -->
         <ul class="filter-list">
           <li class="filter-item">
-            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn active" data-filter="all">All Projects</button>
           </li>
           <li class="filter-item">
             <button class="filter-btn" data-filter="web-development">Web Development</button>
@@ -384,7 +431,7 @@
         <div class="project-grid">
 
           <!-- Tic Tac Toe Card -->
-          <div class="project-item" data-category="games">
+          <div class="project-item" data-category="games web-development">
             <div class="project-card">
               <figure class="project-img">
                 <img src="tic-tac-toe.png" alt="Tic Tac Toe Game">
@@ -395,16 +442,19 @@
                 </div>
               </figure>
               <div class="project-content">
-                <span class="project-category">Interactive Game</span>
-                <h3 class="project-title">Tic Tac Toe Game</h3>
+                <span class="project-category"><i class="fas fa-gamepad"></i> Interactive Game</span>
+                <h3 class="project-title">Tic Tac Toe Web Arena</h3>
                 <p class="project-desc">
-                  A modern, responsive Tic-Tac-Toe web game with dynamic win detection, turn indicators, and scorekeeping.
+                  A responsive Tic-Tac-Toe web game with dynamic win detection, turn indicators, and real-time
+                  scoreboard.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://tic-tac-toe-fawn-xi-15.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <a href="https://tic-tac-toe-fawn-xi-15.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary">
                     <i class="fas fa-play"></i> Live Demo
                   </a>
-                  <a href="https://github.com/sapghosh55-lab/tic-tac-toe" target="_blank" class="btn btn-sm btn-secondary">
+                  <a href="https://github.com/sapghosh55-lab/tic-tac-toe" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-secondary">
                     <i class="fab fa-github"></i> GitHub
                   </a>
                   <button class="btn btn-sm btn-outline" data-project-details="tic-tac-toe">
@@ -416,7 +466,7 @@
           </div>
 
           <!-- Rock Paper Scissor Card -->
-          <div class="project-item" data-category="games">
+          <div class="project-item" data-category="games web-development">
             <div class="project-card">
               <figure class="project-img">
                 <img src="rock-paper-scissor.png" alt="Rock Paper Scissor Game">
@@ -427,16 +477,19 @@
                 </div>
               </figure>
               <div class="project-content">
-                <span class="project-category">Interactive Game</span>
-                <h3 class="project-title">Rock Paper Scissor Game</h3>
+                <span class="project-category"><i class="fas fa-hand-rock"></i> Interactive Game</span>
+                <h3 class="project-title">Rock Paper Scissor Battle</h3>
                 <p class="project-desc">
-                  A fun, animated game featuring smart AI randomized moves, live score tracking, and smooth animations.
+                  A dynamic animated game featuring smart AI randomized moves, streak tracking, and celebratory visual
+                  effects.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://rock-paper-scissor-drab-nine.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <a href="https://rock-paper-scissor-drab-nine.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary">
                     <i class="fas fa-play"></i> Live Demo
                   </a>
-                  <a href="https://github.com/sapghosh55-lab/rock-paper-scissor" target="_blank" class="btn btn-sm btn-secondary">
+                  <a href="https://github.com/sapghosh55-lab/rock-paper-scissor" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                     <i class="fab fa-github"></i> GitHub
                   </a>
                   <button class="btn btn-sm btn-outline" data-project-details="rock-paper-scissor">
@@ -448,7 +501,7 @@
           </div>
 
           <!-- Currency Exchanger Card -->
-          <div class="project-item" data-category="api-apps">
+          <div class="project-item" data-category="api-apps web-development">
             <div class="project-card">
               <figure class="project-img">
                 <img src="currency-exchanger.png" alt="Currency Exchanger">
@@ -459,16 +512,19 @@
                 </div>
               </figure>
               <div class="project-content">
-                <span class="project-category">Web Application & API</span>
-                <h3 class="project-title">Currency Exchanger</h3>
+                <span class="project-category"><i class="fas fa-exchange-alt"></i> Web Application & API</span>
+                <h3 class="project-title">Global Currency Exchanger</h3>
                 <p class="project-desc">
-                  A real-time foreign currency exchange converter fetching live rates with country flags and instant calculations.
+                  A real-time foreign currency converter fetching live rates with instant bi-directional calculation and
+                  flags.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://currency-exchanger-six-psi.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <a href="https://currency-exchanger-six-psi.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary">
                     <i class="fas fa-play"></i> Live Demo
                   </a>
-                  <a href="https://github.com/sapghosh55-lab/Currency-exchanger.git" target="_blank" class="btn btn-sm btn-secondary">
+                  <a href="https://github.com/sapghosh55-lab/Currency-exchanger.git" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                     <i class="fab fa-github"></i> GitHub
                   </a>
                   <button class="btn btn-sm btn-outline" data-project-details="currency-exchanger">
@@ -480,7 +536,7 @@
           </div>
 
           <!-- Weather App Card -->
-          <div class="project-item" data-category="api-apps">
+          <div class="project-item" data-category="api-apps web-development">
             <div class="project-card">
               <figure class="project-img">
                 <img src="weather-app.png" alt="Weather App">
@@ -491,16 +547,19 @@
                 </div>
               </figure>
               <div class="project-content">
-                <span class="project-category">Web Application & API</span>
-                <h3 class="project-title">Live Weather App</h3>
+                <span class="project-category"><i class="fas fa-cloud-sun"></i> Web Application & API</span>
+                <h3 class="project-title">Live Atmospheric Weather App</h3>
                 <p class="project-desc">
-                  Real-time weather forecast application with global city search, humidity metrics, and atmospheric visual effects.
+                  Real-time weather forecast radar with global city search, humidity metrics, and atmospheric visual
+                  conditions.
                 </p>
                 <div class="project-buttons">
-                  <a href="https://weather-app-pearl-rho-86.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                  <a href="https://weather-app-pearl-rho-86.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-primary">
                     <i class="fas fa-play"></i> Live Demo
                   </a>
-                  <a href="https://github.com/sapghosh55-lab/Weather-app" target="_blank" class="btn btn-sm btn-secondary">
+                  <a href="https://github.com/sapghosh55-lab/Weather-app" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-secondary">
                     <i class="fab fa-github"></i> GitHub
                   </a>
                   <button class="btn btn-sm btn-outline" data-project-details="weather-app">
@@ -517,7 +576,7 @@
       <!-- ================= 4. CERTIFICATIONS SECTION ================= -->
       <section id="certifications" class="tab-content">
         <header>
-          <h2 class="article-title">Certifications & Achievements</h2>
+          <h2 class="article-title"><i class="fas fa-medal spidey-title-icon"></i> Badges & Certifications</h2>
         </header>
 
         <div class="certifications-grid">
@@ -527,10 +586,11 @@
               <i class="fas fa-certificate"></i>
             </div>
             <div class="cert-content">
-              <span class="cert-badge">Verified</span>
+              <span class="cert-badge">Verified Heroic Skill</span>
               <h3 class="cert-title">Web Development Fundamentals</h3>
               <p class="cert-issuer"><i class="fas fa-building"></i> Online Developer Program</p>
-              <p class="cert-desc">Covered semantic HTML5, modern CSS3 styling, responsive grid layouts, and JavaScript DOM manipulation.</p>
+              <p class="cert-desc">Covered semantic HTML5, modern CSS3 styling, responsive grid layouts, and JavaScript
+                DOM manipulation.</p>
               <div class="cert-tags">
                 <span>HTML5</span>
                 <span>CSS3</span>
@@ -544,10 +604,11 @@
               <i class="fas fa-award"></i>
             </div>
             <div class="cert-content">
-              <span class="cert-badge">Achievement</span>
+              <span class="cert-badge">Core Mastery</span>
               <h3 class="cert-title">Data Structures & Algorithms in C</h3>
               <p class="cert-issuer"><i class="fas fa-university"></i> Computer Science Core</p>
-              <p class="cert-desc">Mastered linear and non-linear data structures including Linked Lists, Stacks, Queues, Trees, and Sorting algorithms in C.</p>
+              <p class="cert-desc">Mastered linear and non-linear data structures including Linked Lists, Stacks,
+                Queues, Trees, and Sorting algorithms in C.</p>
               <div class="cert-tags">
                 <span>C Language</span>
                 <span>Data Structures</span>
@@ -561,10 +622,11 @@
               <i class="fas fa-trophy"></i>
             </div>
             <div class="cert-content">
-              <span class="cert-badge">Competition</span>
+              <span class="cert-badge">Competition Victory</span>
               <h3 class="cert-title">Hackathon Finalist & Innovation Award</h3>
               <p class="cert-issuer"><i class="fas fa-code-branch"></i> Tech Community</p>
-              <p class="cert-desc">Architected and pitched a rapid prototype addressing real-world problem sets with responsive web interfaces.</p>
+              <p class="cert-desc">Architected and pitched a rapid prototype addressing real-world problem sets with
+                responsive web interfaces.</p>
               <div class="cert-tags">
                 <span>Hackathon</span>
                 <span>Rapid Prototyping</span>
@@ -576,10 +638,11 @@
         </div>
       </section>
 
-      <!-- ================= 5. BLOG SECTION ================= -->
+      <!-- ================= 5. BLOG SECTION - DAILY BUGLE TECH ================= -->
       <section id="blog" class="tab-content">
         <header>
-          <h2 class="article-title">Articles & Blog</h2>
+          <h2 class="article-title"><i class="fas fa-newspaper spidey-title-icon"></i> The Daily Bugle Tech Chronicles
+          </h2>
         </header>
 
         <div class="blog-grid">
@@ -587,21 +650,22 @@
           <article class="blog-card">
             <div class="blog-banner-box">
               <div class="blog-icon">
-                <i class="fas fa-laptop-code"></i>
+                <i class="fas fa-spider"></i>
               </div>
             </div>
             <div class="blog-content">
               <div class="blog-meta">
-                <span class="blog-category">Web Dev</span>
+                <span class="blog-category">Web Slinging</span>
                 <span class="dot"></span>
                 <time datetime="2026-02">Feb 2026</time>
               </div>
-              <h3 class="blog-title">Building My Neon Cyber Portfolio Website</h3>
+              <h3 class="blog-title">Engineering My Spider-Verse Themed Portfolio</h3>
               <p class="blog-text">
-                How I designed and engineered an eye-catching, glassmorphic neon portfolio with vanilla JavaScript, CSS custom properties, and SPA routing.
+                How I designed and engineered a high-energy Spider-Man themed portfolio with CSS custom properties, SPA
+                tab routing, and web shooter particle effects.
               </p>
               <button class="btn btn-sm btn-link" data-blog-id="portfolio-site">
-                Read Article <i class="fas fa-arrow-right"></i>
+                Read Chronicle <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </article>
@@ -620,10 +684,11 @@
               </div>
               <h3 class="blog-title">Understanding Stack Data Structures in C</h3>
               <p class="blog-text">
-                A deep dive into LIFO data structures, stack memory management, dynamic pointers, push/pop operations, and real-world compiler applications.
+                A deep dive into LIFO data structures, stack memory management, dynamic pointers, push/pop operations,
+                and real-world compiler applications.
               </p>
               <button class="btn btn-sm btn-link" data-blog-id="stack-c-language">
-                Read Article <i class="fas fa-arrow-right"></i>
+                Read Chronicle <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </article>
@@ -636,16 +701,17 @@
             </div>
             <div class="blog-content">
               <div class="blog-meta">
-                <span class="blog-category">Career</span>
+                <span class="blog-category">Origins</span>
                 <span class="dot"></span>
                 <time datetime="2025-12">Dec 2025</time>
               </div>
-              <h3 class="blog-title">My Journey into Full-Stack Web Development</h3>
+              <h3 class="blog-title">My Origin Story: Full-Stack Web Engineering</h3>
               <p class="blog-text">
-                From basic C code to building interactive web apps, API consumption, open-source collaboration, and participating in hackathons.
+                From foundational C code to interactive web apps, API consumption, open-source heroics, and hackathon
+                crusades.
               </p>
               <button class="btn btn-sm btn-link" data-blog-id="web-dev-journey">
-                Read Article <i class="fas fa-arrow-right"></i>
+                Read Chronicle <i class="fas fa-arrow-right"></i>
               </button>
             </div>
           </article>
@@ -656,7 +722,7 @@
       <!-- ================= 6. CONTACT SECTION ================= -->
       <section id="contact" class="tab-content">
         <header>
-          <h2 class="article-title">Contact</h2>
+          <h2 class="article-title"><i class="fas fa-satellite-dish spidey-title-icon"></i> Spider-Signal Dispatch</h2>
         </header>
 
         <!-- DIRECT CONNECT CARDS -->
@@ -666,62 +732,67 @@
               <i class="fas fa-envelope"></i>
             </div>
             <div class="quick-info">
-              <h4>Email Me</h4>
+              <h4>Email Dispatch</h4>
               <p>sapghosh55@gmail.com</p>
             </div>
           </a>
 
-          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" class="contact-quick-card">
+          <a href="https://linkedin.com/in/saptarshi-ghosh-217566382" target="_blank" rel="noopener noreferrer"
+            class="contact-quick-card">
             <div class="quick-icon-box">
               <i class="fab fa-linkedin"></i>
             </div>
             <div class="quick-info">
-              <h4>LinkedIn</h4>
+              <h4>LinkedIn Network</h4>
               <p>Connect professionally</p>
             </div>
           </a>
 
-          <a href="https://wa.me/918240084299" target="_blank" class="contact-quick-card">
+          <a href="https://wa.me/918240084299" target="_blank" rel="noopener noreferrer" class="contact-quick-card">
             <div class="quick-icon-box">
               <i class="fab fa-whatsapp"></i>
             </div>
             <div class="quick-info">
-              <h4>WhatsApp</h4>
-              <p>Instant chat</p>
+              <h4>WhatsApp Hotline</h4>
+              <p>Instant direct chat</p>
             </div>
           </a>
         </div>
 
         <!-- CONTACT FORM -->
         <section class="contact-form-section">
-          <h3 class="service-title">Send Me a Message</h3>
+          <h3 class="service-title"><i class="fas fa-paper-plane"></i> Transmit a Signal</h3>
 
           <form class="contact-form">
             <div class="input-wrapper">
               <div class="form-group">
                 <label for="fullname">Full Name *</label>
-                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="e.g. Alex Johnson" required>
+                <input type="text" id="fullname" name="fullname" class="form-input" placeholder="e.g. Peter Parker"
+                  required>
               </div>
 
               <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. peter@dailybugle.com"
+                  required>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project collaboration / Inquiry">
+              <label for="subject">Mission Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input"
+                placeholder="Project collaboration / Opportunity / Tech Inquiry">
             </div>
 
             <div class="form-group">
               <label for="message">Your Message *</label>
-              <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Hi Saptarshi, I'd like to discuss a project..." required></textarea>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5"
+                placeholder="Hi Saptarshi, I'd like to discuss a project or web collaboration..." required></textarea>
             </div>
 
             <button class="btn btn-primary form-btn" type="submit">
               <i class="fas fa-paper-plane"></i>
-              <span>Send Message</span>
+              <span>Send Spider-Signal</span>
             </button>
           </form>
         </section>
@@ -747,24 +818,24 @@
         <div class="modal-details">
           <span id="modal-project-category" class="project-category">Category</span>
           <h3 id="modal-project-title" class="modal-title">Project Title</h3>
-          
+
           <p id="modal-project-desc" class="modal-desc">Project description goes here.</p>
 
           <div class="modal-section">
-            <h4>Technologies Used</h4>
+            <h4>Arsenal / Technologies Used</h4>
             <div id="modal-project-tags" class="tags-flex"></div>
           </div>
 
           <div class="modal-section">
-            <h4>Key Highlights</h4>
+            <h4>Mission Highlights</h4>
             <ul id="modal-project-features" class="modal-features-list"></ul>
           </div>
 
           <div class="modal-action-buttons">
-            <a id="modal-live-link" href="#" target="_blank" class="btn btn-primary">
-              <i class="fas fa-external-link-alt"></i> View Live Demo
+            <a id="modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Launch Live Demo
             </a>
-            <a id="modal-github-link" href="#" target="_blank" class="btn btn-secondary">
+            <a id="modal-github-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
               <i class="fab fa-github"></i> View GitHub Repo
             </a>
           </div>
@@ -789,7 +860,7 @@
           <span class="dot"></span>
           <span id="modal-blog-readtime">Read Time</span>
         </div>
-        <h2 id="modal-blog-title" class="modal-title">Blog Title</h2>
+        <h2 id="modal-blog-title" class="modal-title">Chronicle Title</h2>
       </div>
 
       <div id="modal-blog-body" class="modal-article-body"></div>

@@ -4,24 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects — Saptarshi Ghosh</title>
+    <title>Featured Projects — Saptarshi Ghosh | Spider-Man Showcase</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="main-container" style="max-width: 1000px; flex-direction: column;">
-        <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <!-- SPIDER-WEB BACKGROUND OVERLAY -->
+    <div class="spidey-bg-web"></div>
+
+    <div class="main-container showcase-container">
+        <div class="showcase-nav-bar">
             <a href="index.html" class="btn btn-secondary">
-                <i class="fas fa-arrow-left"></i> Back to Main Portfolio
+                <i class="fas fa-arrow-left"></i> Return to Main HQ
             </a>
-            <span class="title">Saptarshi's Project Showcase</span>
+            <div class="title-badge">
+                <i class="fas fa-spider"></i> Spider-Verse Project Multiverse
+            </div>
         </div>
 
-        <main class="main-content" style="width: 100%; padding-top: 35px;">
+        <main class="main-content showcase-main">
             <header>
-                <h1 class="article-title">Featured Projects</h1>
+                <h1 class="article-title"><i class="fas fa-layer-group spidey-title-icon"></i> Featured Web Projects</h1>
             </header>
 
             <div class="project-grid">
@@ -29,19 +38,19 @@
                 <div class="project-item">
                     <div class="project-card">
                         <figure class="project-img">
-                            <img src="tic-tac-toe.png" alt="Tic Tac Toe">
+                            <img src="tic-tac-toe.png" alt="Tic Tac Toe Game">
                         </figure>
                         <div class="project-content">
-                            <span class="project-category">Interactive Game</span>
-                            <h3 class="project-title">Tic Tac Toe Game</h3>
+                            <span class="project-category"><i class="fas fa-gamepad"></i> Interactive Game</span>
+                            <h3 class="project-title">Tic Tac Toe Arena</h3>
                             <p class="project-desc">
-                                A responsive Tic-Tac-Toe game developed using HTML, CSS and JavaScript with dynamic win logic and scoreboard.
+                                A responsive Tic-Tac-Toe web game developed using HTML, CSS and JavaScript with dynamic win logic and scoreboard.
                             </p>
                             <div class="project-buttons">
-                                <a href="https://tic-tac-toe-fawn-xi-15.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                                <a href="https://tic-tac-toe-fawn-xi-15.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
                                     <i class="fas fa-play"></i> Live Demo
                                 </a>
-                                <a href="https://github.com/sapghosh55-lab/tic-tac-toe" target="_blank" class="btn btn-sm btn-secondary">
+                                <a href="https://github.com/sapghosh55-lab/tic-tac-toe" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -56,16 +65,16 @@
                             <img src="rock-paper-scissor.png" alt="Rock Paper Scissor">
                         </figure>
                         <div class="project-content">
-                            <span class="project-category">Interactive Game</span>
-                            <h3 class="project-title">Rock Paper Scissor Game</h3>
+                            <span class="project-category"><i class="fas fa-hand-rock"></i> Interactive Game</span>
+                            <h3 class="project-title">Rock Paper Scissor Battle</h3>
                             <p class="project-desc">
-                                A fun interactive Rock Paper Scissor game built using HTML, CSS, and JavaScript with animated moves.
+                                A fun interactive Rock Paper Scissor game built using HTML, CSS, and JavaScript with animated moves and streak counts.
                             </p>
                             <div class="project-buttons">
-                                <a href="https://rock-paper-scissor-drab-nine.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                                <a href="https://rock-paper-scissor-drab-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
                                     <i class="fas fa-play"></i> Live Demo
                                 </a>
-                                <a href="https://github.com/sapghosh55-lab/rock-paper-scissor" target="_blank" class="btn btn-sm btn-secondary">
+                                <a href="https://github.com/sapghosh55-lab/rock-paper-scissor" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -80,16 +89,16 @@
                             <img src="currency-exchanger.png" alt="Currency Exchanger">
                         </figure>
                         <div class="project-content">
-                            <span class="project-category">API Web App</span>
+                            <span class="project-category"><i class="fas fa-exchange-alt"></i> API Web App</span>
                             <h3 class="project-title">Currency Exchanger</h3>
                             <p class="project-desc">
                                 A real-time currency exchange converter application built using HTML, CSS, JavaScript, and external exchange rate APIs.
                             </p>
                             <div class="project-buttons">
-                                <a href="https://currency-exchanger-six-psi.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                                <a href="https://currency-exchanger-six-psi.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
                                     <i class="fas fa-play"></i> Live Demo
                                 </a>
-                                <a href="https://github.com/sapghosh55-lab/Currency-exchanger.git" target="_blank" class="btn btn-sm btn-secondary">
+                                <a href="https://github.com/sapghosh55-lab/Currency-exchanger.git" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -104,16 +113,16 @@
                             <img src="weather-app.png" alt="Weather App">
                         </figure>
                         <div class="project-content">
-                            <span class="project-category">API Web App</span>
-                            <h3 class="project-title">Weather App</h3>
+                            <span class="project-category"><i class="fas fa-cloud-sun"></i> API Web App</span>
+                            <h3 class="project-title">Atmospheric Weather App</h3>
                             <p class="project-desc">
-                                A real-time weather application built using HTML, CSS, JavaScript, and external weather APIs.
+                                A live weather forecast application fetching meteorological metrics, humidity levels, and worldwide city conditions.
                             </p>
                             <div class="project-buttons">
-                                <a href="https://weather-app-pearl-rho-86.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+                                <a href="https://weather-app-pearl-rho-86.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
                                     <i class="fas fa-play"></i> Live Demo
                                 </a>
-                                <a href="https://github.com/sapghosh55-lab/Weather-app" target="_blank" class="btn btn-sm btn-secondary">
+                                <a href="https://github.com/sapghosh55-lab/Weather-app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
@@ -124,6 +133,7 @@
         </main>
     </div>
 
+    <!-- SCRIPT -->
     <script src="script.js"></script>
 </body>
 

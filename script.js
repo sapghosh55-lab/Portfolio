@@ -1,7 +1,8 @@
 /**
- * Saptarshi Ghosh — Portfolio Interactive Script
+ * Saptarshi Ghosh — Spider-Man / Spider-Verse Portfolio Interactive Script
  * Handles navigation tab switching, portfolio filtering, modals,
- * contact form submission, mobile sidebar toggles, and toast alerts.
+ * contact form submission, mobile sidebar toggles, toast alerts,
+ * Spidey-Sense triggers, and Web-Shooter click particle effects.
  */
 
 'use strict';
@@ -16,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initCopyToClipboard();
     initSkillBars();
     initButtonRipples();
+    initSpideySenseFX();
+    initWebShooterParticles();
 });
 
 /* ==========================================================================
@@ -89,7 +92,7 @@ function initNavigationTabs() {
         switchTab(hash);
     });
 
-    // Expose global helper for in-page buttons that switch tabs (e.g. "View Projects" or "Contact Me")
+    // Expose global helper for in-page buttons that switch tabs
     window.navigateToTab = function (tabId) {
         switchTab(tabId);
         history.pushState(null, '', '#' + tabId);
@@ -112,7 +115,7 @@ function initSidebarToggle() {
         const isExpanded = sidebar.classList.contains('expanded');
 
         if (toggleText) {
-            toggleText.textContent = isExpanded ? 'Hide Contacts' : 'Show Contacts';
+            toggleText.textContent = isExpanded ? 'Hide Spider Signals' : 'Show Spider Signals';
         }
         if (toggleIcon) {
             toggleIcon.className = isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
@@ -138,15 +141,15 @@ function initPortfolioFilters() {
             const selectedCategory = this.getAttribute('data-filter') || 'all';
 
             projectItems.forEach(item => {
-                const itemCategory = item.getAttribute('data-category');
+                const itemCategories = (item.getAttribute('data-category') || '').split(' ');
                 
-                if (selectedCategory === 'all' || itemCategory === selectedCategory) {
+                if (selectedCategory === 'all' || itemCategories.includes(selectedCategory)) {
                     item.classList.remove('hidden');
                     item.style.display = 'flex';
                     // Trigger fade in animation
                     item.style.animation = 'none';
                     item.offsetHeight; // trigger reflow
-                    item.style.animation = 'cardFadeIn 0.4s ease forwards';
+                    item.style.animation = 'cardFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards';
                 } else {
                     item.classList.add('hidden');
                     item.style.display = 'none';
@@ -157,42 +160,42 @@ function initPortfolioFilters() {
 }
 
 /* ==========================================================================
-   4. PROJECT DETAILS MODAL POPUP
+   4. PROJECT DETAILS MODAL POPUP (SPIDER ARSENAL)
    ========================================================================== */
 const projectData = {
     'tic-tac-toe': {
-        title: 'Tic Tac Toe Game',
+        title: 'Tic Tac Toe Web Arena',
         category: 'Interactive Web Game',
         image: 'tic-tac-toe.png',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'Game Logic', 'Responsive Design'],
-        description: 'An interactive and visually responsive Tic-Tac-Toe browser game with smooth win detection algorithms, turn indicators, custom sound/visual feedback, score tracking, and restart capabilities.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'Matrix Win Logic', 'Vercel'],
+        description: 'An interactive, responsive Tic-Tac-Toe browser game engineered with dynamic win evaluation matrices, turn indicators, custom visual glow effects, scoreboard persistence, and rapid reset triggers.',
         features: [
             'Dynamic 3x3 interactive matrix with real-time win condition evaluation',
-            'Sleek neon UI with hover glows and victory highlight animations',
-            'Scorekeeper for tracking Player X and Player O wins',
-            'Mobile touch friendly and responsive across all devices'
+            'Sleek Spider-themed UI with hover glows and victory highlight animations',
+            'Scorekeeper for tracking Player X and Player O battles',
+            'Mobile touch friendly and responsive across all screen dimensions'
         ],
         liveUrl: 'https://tic-tac-toe-fawn-xi-15.vercel.app/',
         githubUrl: 'https://github.com/sapghosh55-lab/tic-tac-toe'
     },
     'rock-paper-scissor': {
-        title: 'Rock Paper Scissor Game',
+        title: 'Rock Paper Scissor Battle',
         category: 'Interactive Web Game',
         image: 'rock-paper-scissor.png',
-        tags: ['HTML5', 'CSS3', 'JavaScript', 'DOM Manipulation', 'Vercel'],
-        description: 'A vibrant, animated Rock Paper Scissors game featuring random computer move generation, real-time score calculation, animated win/loss feedback, and celebratory effects.',
+        tags: ['HTML5', 'CSS3', 'JavaScript', 'DOM Manipulation', 'AI Moves'],
+        description: 'A vibrant, animated Rock Paper Scissors game featuring random computer move generation, real-time score calculations, animated win/loss feedback, and celebratory effects.',
         features: [
             'Randomized AI decision generator with fair probability distribution',
             'Real-time animated score counter & round outcome badges',
-            'Cyberpunk glowing visual effects and celebratory animations',
-            'Instant reset and streak tracking'
+            'High-energy glowing visual effects and celebratory win animations',
+            'Instant reset and continuous streak tracking'
         ],
         liveUrl: 'https://rock-paper-scissor-drab-nine.vercel.app/',
         githubUrl: 'https://github.com/sapghosh55-lab/rock-paper-scissor'
     },
     'currency-exchanger': {
-        title: 'Currency Exchanger',
-        category: 'Web Application / API',
+        title: 'Global Currency Exchanger',
+        category: 'Web Application & API',
         image: 'currency-exchanger.png',
         tags: ['JavaScript', 'REST API', 'Async/Await', 'CSS3', 'Currency API'],
         description: 'A fast real-time currency exchange converter application that fetches live global exchange rates via REST APIs, featuring country flag indicators and instant bi-directional conversion calculations.',
@@ -200,14 +203,14 @@ const projectData = {
             'Live global exchange rates fetched via asynchronous REST API',
             'Dynamic country flag updates matching selected currencies',
             'Interactive swap button for swift bi-directional exchange rate queries',
-            'Error handling and fallback rates for offline/interrupted connectivity'
+            'Robust error handling and fallback rates for offline/interrupted connectivity'
         ],
         liveUrl: 'https://currency-exchanger-six-psi.vercel.app/',
         githubUrl: 'https://github.com/sapghosh55-lab/Currency-exchanger.git'
     },
     'weather-app': {
-        title: 'Weather App',
-        category: 'Web Application / API',
+        title: 'Live Atmospheric Weather App',
+        category: 'Web Application & API',
         image: 'weather-app.png',
         tags: ['JavaScript', 'Weather API', 'Geolocation', 'CSS3', 'Async Fetch'],
         description: 'A comprehensive real-time weather application delivering live meteorology metrics, humidity, wind speeds, dynamic atmospheric background changes, and global city search.',
@@ -297,25 +300,26 @@ function initProjectModals() {
 }
 
 /* ==========================================================================
-   5. BLOG READER MODAL
+   5. BLOG READER MODAL (DAILY BUGLE TECH CHRONICLES)
    ========================================================================== */
 const blogPostsData = {
     'portfolio-site': {
-        title: 'Building My Neon Cyber Portfolio Website',
+        title: 'Engineering My Spider-Verse Themed Portfolio',
         date: 'February 2026',
-        category: 'Web Development',
+        category: 'Web Slinging & UI Architecture',
         readTime: '4 min read',
         content: `
-            <p>Creating a developer portfolio is more than simply listing projects — it is about crafting an interactive experience that demonstrates attention to design, clean architecture, and technical execution.</p>
+            <p>Creating a developer portfolio is more than simply listing code repositories — it is about crafting an interactive world that captures identity, precision, and technical execution.</p>
             <br>
             <h4>Key Architectural Decisions</h4>
-            <p>I opted for a modern, glassmorphic neon aesthetic with CSS custom properties (variables) for theme consistency. By structuring components into independent tabs and building an efficient JavaScript-driven single page application (SPA), page transitions remain instantaneous without unnecessary framework overhead.</p>
+            <p>I crafted a high-tech Spider-Verse aesthetic with custom CSS variables for effortless theming. By structuring components into independent tabs and building an efficient JavaScript-driven single page application (SPA), page transitions remain instantaneous without unnecessary framework overhead.</p>
             <br>
-            <h4>Interactive Features Built</h4>
+            <h4>Heroic Features Engineered</h4>
             <ul>
                 <li>Modular tab navigation with full browser history support.</li>
                 <li>Dynamic category filtering for project showcases.</li>
                 <li>Interactive quick-view modals for deep project inspection.</li>
+                <li>Interactive Web-Shooter particle effects and Spidey-Sense alert system.</li>
                 <li>Client-validated contact form with simulated real-time response toast alerts.</li>
             </ul>
         `
@@ -326,7 +330,7 @@ const blogPostsData = {
         category: 'Data Structures & C',
         readTime: '6 min read',
         content: `
-            <p>The Stack is one of the foundational Linear Data Structures adhering strictly to the <strong>Last In, First Out (LIFO)</strong> principle. In C, understanding stacks is critical for mastering pointer manipulation and dynamic memory allocation.</p>
+            <p>The Stack is one of the foundational Linear Data Structures adhering strictly to the <strong>Last In, First Out (LIFO)</strong> principle. In C, mastering stacks is critical for understanding pointer manipulation and dynamic memory allocation.</p>
             <br>
             <h4>Core Stack Operations</h4>
             <ul>
@@ -341,12 +345,12 @@ const blogPostsData = {
         `
     },
     'web-dev-journey': {
-        title: 'My Journey into Full-Stack Web Development',
+        title: 'My Origin Story: Full-Stack Web Engineering',
         date: 'December 2025',
-        category: 'Career & Learning',
+        category: 'Career & Engineering Origins',
         readTime: '5 min read',
         content: `
-            <p>Stepping into computer science and web development has been a transformative experience. Transitioning from foundational C programming to the dynamic web ecosystem opened up endless opportunities for creative engineering.</p>
+            <p>Stepping into computer science and web development has been an exhilarating journey. Transitioning from foundational C programming to the dynamic web ecosystem opened up endless opportunities for creative engineering.</p>
             <br>
             <h4>Milestones & Learnings</h4>
             <ul>
@@ -456,7 +460,7 @@ function initContactForm() {
 
         const name = nameInput ? nameInput.value.trim() : '';
         const email = emailInput ? emailInput.value.trim() : '';
-        const subject = subjectInput ? subjectInput.value.trim() : 'Portfolio Inquiry';
+        const subject = subjectInput ? subjectInput.value.trim() : 'Spider-Signal Inquiry';
         const message = messageInput ? messageInput.value.trim() : '';
 
         if (!name || !email || !message) {
@@ -467,19 +471,19 @@ function initContactForm() {
         // Show loading state on button
         if (submitBtn) {
             submitBtn.disabled = true;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>';
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Transmitting Signal...</span>';
         }
 
         // Simulate async sending with instant feedback
         setTimeout(() => {
             if (submitBtn) {
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Message</span>';
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> <span>Send Spider-Signal</span>';
                 submitBtn.classList.remove('ready');
             }
 
             form.reset();
-            showToast(`Thank you, ${name}! Your message has been sent successfully.`, 'success');
+            showToast(`Spider-Signal received from ${name}! I'll swing back to you soon.`, 'success');
         }, 1200);
     });
 }
@@ -516,7 +520,7 @@ function showToast(message, type = 'info') {
     }
 
     // Set icon based on type
-    let icon = 'fas fa-info-circle';
+    let icon = 'fas fa-spider';
     if (type === 'success') icon = 'fas fa-check-circle';
     if (type === 'warning') icon = 'fas fa-exclamation-triangle';
     if (type === 'error') icon = 'fas fa-times-circle';
@@ -533,7 +537,7 @@ function showToast(message, type = 'info') {
     clearTimeout(toastTimeout);
     toastTimeout = setTimeout(() => {
         toast.classList.remove('show');
-    }, 3800);
+    }, 4000);
 }
 
 /* ==========================================================================
@@ -555,7 +559,7 @@ function animateSkillBars() {
 }
 
 /* ==========================================================================
-   9. BUTTON RIPPLE / ACTIVE GLOW EFFECT
+   9. BUTTON RIPPLE / WEB-SPLAT EFFECT
    ========================================================================== */
 function initButtonRipples() {
     const interactiveButtons = document.querySelectorAll('.btn, .navbar-link, .filter-btn, .project-btn, .sidebar-socials a, .contact-link');
@@ -575,7 +579,76 @@ function initButtonRipples() {
             if (existingRipple) existingRipple.remove();
 
             this.appendChild(circle);
-            setTimeout(() => circle.remove(), 600);
+            setTimeout(() => circle.remove(), 650);
         });
     });
+}
+
+/* ==========================================================================
+   10. SPIDEY-SENSE TINGLE FX & EASTER EGGS
+   ========================================================================== */
+function initSpideySenseFX() {
+    const avatar = document.getElementById('spidey-avatar');
+    const spideySenseBtn = document.getElementById('spidey-sense-btn');
+    const wave = document.getElementById('spidey-sense-wave');
+
+    function triggerSpideySense() {
+        if (wave) {
+            wave.classList.remove('active');
+            void wave.offsetWidth; // trigger reflow
+            wave.classList.add('active');
+            setTimeout(() => {
+                wave.classList.remove('active');
+            }, 1200);
+        }
+
+        showToast('⚡ SPIDEY-SENSE TINGLING: Saptarshi\'s coding reflexes are at maximum power!', 'warning');
+    }
+
+    if (avatar) avatar.addEventListener('click', triggerSpideySense);
+    if (spideySenseBtn) spideySenseBtn.addEventListener('click', triggerSpideySense);
+}
+
+/* ==========================================================================
+   11. DYNAMIC WEB-SHOOTER PARTICLES ON CLICK
+   ========================================================================== */
+function initWebShooterParticles() {
+    document.addEventListener('click', (e) => {
+        // Create small web particle burst on click if not on input or interactive element
+        const target = e.target;
+        if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.tagName === 'SELECT') return;
+
+        createWebStrandParticle(e.clientX, e.clientY);
+    });
+}
+
+function createWebStrandParticle(x, y) {
+    const particle = document.createElement('div');
+    particle.style.position = 'fixed';
+    particle.style.left = `${x - 12}px`;
+    particle.style.top = `${y - 12}px`;
+    particle.style.width = '24px';
+    particle.style.height = '24px';
+    particle.style.pointerEvents = 'none';
+    particle.style.zIndex = '9999';
+    particle.style.color = 'rgba(255, 255, 255, 0.85)';
+    particle.style.fontSize = '1.2rem';
+    particle.style.display = 'flex';
+    particle.style.alignItems = 'center';
+    particle.style.justifyContent = 'center';
+    particle.style.transition = 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+    particle.style.transform = 'scale(0.5) rotate(0deg)';
+    particle.style.opacity = '1';
+    particle.innerHTML = '<i class="fas fa-spider" style="filter: drop-shadow(0 0 6px rgba(0, 210, 255, 0.8));"></i>';
+
+    document.body.appendChild(particle);
+
+    requestAnimationFrame(() => {
+        particle.style.transform = `scale(1.4) translateY(-18px) rotate(${Math.random() * 60 - 30}deg)`;
+        particle.style.opacity = '0';
+    });
+
+    setTimeout(() => {
+        particle.remove();
+    }, 550);
 }
