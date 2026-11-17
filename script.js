@@ -222,6 +222,22 @@ const projectData = {
         ],
         liveUrl: 'https://weather-app-pearl-rho-86.vercel.app/',
         githubUrl: 'https://github.com/sapghosh55-lab/Weather-app'
+    },
+    'pujonavigate': {
+        title: 'PujoNavigate — Crowd Navigation & Accessibility Guide',
+        category: 'Geo Navigation & Full-Stack Web App',
+        image: 'pujonavigate.png',
+        tags: ['React', 'TypeScript', 'Tailwind CSS', 'Leaflet', 'OpenStreetMap', 'Web Audio API', 'Vercel'],
+        description: 'A lightweight, high-performance crowd navigation, AI route planning, and accessibility web application engineered for Kolkata Durga Puja and Barasat Kali Puja, aiding visitors, families, seniors, and wheelchair users to navigate festive corridors with ease.',
+        features: [
+            'Dual-Festival Toggle: Instant switching between Kolkata Durga Puja (70+ pandals) and Barasat Kali Puja (22+ pandals)',
+            'Interactive Cluster Map: Smooth raster tile navigation powered by Leaflet and OpenStreetMap',
+            'Accessibility-First Filters: Designated wheelchair ramps, senior priority queues, medical booths, and public restrooms',
+            'Transit & Metro Guidance: Gate-by-gate Kolkata Metro routing and Eastern Railway EMU station walking exits',
+            'Dhak Ambience Synthesizer: Native Web Audio synthesizer with dual festival rhythms (125 BPM Durga Puja & 140 BPM Kali Puja)'
+        ],
+        liveUrl: 'https://durgapujo-silk.vercel.app/',
+        githubUrl: 'https://github.com/sapghosh55-lab/PujoNavigate.git'
     }
 };
 
