@@ -238,6 +238,22 @@ const projectData = {
         ],
         liveUrl: 'https://durgapujo-silk.vercel.app/',
         githubUrl: 'https://github.com/sapghosh55-lab/PujoNavigate.git'
+    },
+    'health-tracker': {
+        title: 'Serene Pulse — Mindful Health Tracker',
+        category: 'AI Health & Full-Stack Web App',
+        image: 'health-tracker.png',
+        tags: ['React 19', 'TypeScript', 'Tailwind CSS v4', 'Google Gemini AI', 'Motion', 'IndexedDB', 'Vercel'],
+        description: 'A responsive, offline-first mindfulness and wellness web application designed to help users cultivate daily calm, monitor wellness trends, track mood changes, and perform guided micro-breaks with Gemini AI insights.',
+        features: [
+            'Zen Dashboard: Interactive pulsing breathing orb, heart rate check, and daily mindfulness reflections',
+            'Mindful Mood Tracker: Nuanced mood scoring, emotional categorizations, and historical logs',
+            'Refresh Zone: Guided micro-break timer routines for breathwork, eye soothing, neck stretches, and hydration',
+            'Peaceful Trends: Weekly wellness analytics, visual charts, and AI-powered mental health insights',
+            'Offline-First Architecture: Client-side persistence using IndexedDB with automatic LocalStorage fallback'
+        ],
+        liveUrl: 'https://health-tracker-lyart-phi.vercel.app',
+        githubUrl: 'https://github.com/sapghosh55-lab/health-tracker.git'
     }
 };
 
