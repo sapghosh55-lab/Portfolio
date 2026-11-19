@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPortfolioFilters();
     initProjectModals();
     initBlogModals();
+    initCertModals();
     initContactForm();
     initCopyToClipboard();
     initSkillBars();
@@ -437,6 +438,62 @@ function initBlogModals() {
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             closeBlogModal();
+        }
+    });
+}
+
+/* ==========================================================================
+   5b. CERTIFICATE VIEWER MODAL
+   ========================================================================== */
+function initCertModals() {
+    const certModal = document.getElementById('cert-modal');
+    if (!certModal) return;
+
+    const modalCloseBtn = certModal.querySelector('.modal-close-btn');
+    const modalOverlay = certModal.querySelector('.modal-backdrop');
+    const viewButtons = document.querySelectorAll('.cert-view-btn');
+
+    function openCertModal(imgSrc, title, issuer) {
+        const modalImg = certModal.querySelector('#modal-cert-img');
+        const modalTitle = certModal.querySelector('#modal-cert-title');
+        const modalIssuer = certModal.querySelector('#modal-cert-issuer');
+        const openLink = certModal.querySelector('#modal-cert-open');
+
+        if (modalImg) {
+            modalImg.src = imgSrc;
+            modalImg.alt = title;
+        }
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalIssuer) modalIssuer.innerHTML = `<i class="fas fa-award"></i> ${issuer}`;
+        if (openLink) openLink.href = imgSrc;
+
+        certModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+        certModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    viewButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const imgSrc = btn.getAttribute('data-cert-img');
+            const title = btn.getAttribute('data-cert-title') || 'Certificate';
+            const issuer = btn.getAttribute('data-cert-issuer') || 'Verified Credential';
+            if (imgSrc) {
+                openCertModal(imgSrc, title, issuer);
+            }
+        });
+    });
+
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCertModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeCertModal);
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && certModal.classList.contains('active')) {
+            closeCertModal();
         }
     });
 }
